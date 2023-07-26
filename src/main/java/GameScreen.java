@@ -372,6 +372,9 @@ public class GameScreen extends Scene {
         	}
         }
         for (Vertex vert : vertices) drawVert(vert);
+        
+        if (gridBtn.isSelected()) drawGrid();
+        else if (gridBtn.isIndeterminate()) drawCircleGrid();
     }
     
     // this sets up the control points for the bezier edge curves
